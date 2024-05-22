@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Andrei Popescu</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="4.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lalezar&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://use.fontawesome.com/d1341f9b7a.js"></script>
+  </head>
+  <body>
+    <header>
+      <nav class="meniu">
+        <ul class="nav">
+          <li><a href="desprenoi.html">Despre Noi</a></li>
+          <li class="dropdown">
+            <a href="#" class="dropbtn">Echipă</a>
+            <div class="dropdown-content">
+              <a href="jucatori.html">Jucători</a>
+              <a href="antrenori.html">Antrenori</a>
+            </div>
+          </li>
+          <li>
+            <a href="principala.html">
+              <img id="logo" src="logo.png" alt="Logo" />
+            </a>
+          </li>
+          <li><a href="program.html">Program</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="meniu-hamburger" onclick="toggleMeniu()">
+      <img src="hamburger.png" alt="Meniu Hamburger" />
+    </div>
+
+    <ul class="meniu-hamburger-list" id="meniu-hamburger-list">
+      <li><a href="principala.html">Pagina Principală</a></li>
+      <li><a href="desprenoi.html">Despre Noi</a></li>
+      <li><a href="jucatori.html">Jucători</a></li>
+      <li><a href="antrenori.html">Antrenori</a></li>
+      <li><a href="program.html">Program</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+
+    <main>
+      <div class="numepagina">
+        <div class="box">
+          <img src="./poze-jucatori/4.png" alt="" class="box-img" />
+          <h1>George Marinescu</h1>
+          <h5>#4 Aripă</h5>
+          <p>
+            George Marinescu, talentatul jucător al echipei de baschet Ciorile
+            Giulești, se remarcă prin abilitățile sale remarcabile pe teren.
+            Născut cu pasiune pentru baschet în sânge, el a devenit o prezență
+            esențială în echipă, contribuind la succesele acesteia. Admirat
+            pentru viziunea sa de joc și precizia în aruncările la coș,
+            Marinescu este o forță vitală pentru echipă.
+          </p>
+          <div class="image-text-container">
+            <div class="image-text-item">
+              <img src="./poze-jucatori/poza4.png" alt="Imagine 1" />
+              <p>Puncte/meci</p>
+              <p>15.2</p>
+            </div>
+            <div class="image-text-item">
+              <img src="./poze-jucatori/assist.png" alt="Imagine 2" />
+              <p>Pase decisive/meci</p>
+              <p>7.6</p>
+            </div>
+            <div class="image-text-item">
+              <img src="./poze-jucatori/block.png" alt="Imagine 2" />
+              <p>Capace/meci</p>
+              <p>1.2</p>
+            </div>
+            <div class="image-text-item">
+              <img src="./poze-jucatori/rebound.png" alt="Imagine 2" />
+              <p>Recuperări/meci</p>
+              <p>7.3</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="footer">
+        <img src="footer.jpg" alt="footer" />
+      </div>
+    </footer>
+    <script>
+      function toggleMeniu() {
+        let meniuHamburger = document.getElementById("meniu-hamburger-list");
+        if (meniuHamburger.style.display === "block") {
+          meniuHamburger.style.display = "none"; // Ascunde meniul
+        } else {
+          meniuHamburger.style.display = "block"; // Afiseaza meniul
+        }
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,67 @@
+/* Restul stilurilor tale CSS */
+
+.container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 50px;
+  flex-wrap: wrap; /* Va permite elementelor să treacă pe mai multe rânduri */
+}
+
+.box {
+  flex: 0 0 calc(33.33% - 20px);
+  background-color: #d9d9d9;
+  text-align: center;
+  margin-bottom: 20px;
+  position: relative;
+  border: 2px solid #000000;
+  border-radius: 5px;
+}
+
+/* Media query pentru ecrane de dimensiuni mai mari, cum ar fi desktopurile și tabletele */
+@media screen and (max-width: 1024px) {
+  .box {
+    flex: 0 0 calc(50% - 20px); /* Pe desktop și tablete, fiecare div ocupă 1/2 din spațiu */
+  }
+}
+
+/* Media query pentru ecrane mai mici, cum ar fi telefoanele */
+@media screen and (max-width: 480px) {
+  .box {
+    flex: 0 0 100%; /* Pe telefoane, fiecare div ocupă tot spațiul disponibil */
+    margin-left: auto; /* Aliniați div-urile în centru pe ecranele mai mici */
+    margin-right: auto;
+  }
+}
+
+.box img {
+  width: 100%;
+  height: auto;
+}
+
+.text-box {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #000000;
+  color: #ffffff;
+  padding: 10px;
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 23px;
+}
+.numepagina {
+  padding: 20px; /* Padding around the content */
+  text-align: center;
+  font-size: 25px;
+  width: fit-content; /* Set width to fit the content */
+  margin: 0 auto; /* Center the div horizontally */
+  background-color: #323a3a; /* Background color for the box */
+  color: #ffffff; /* Text color */
+  border: 2px solid #000000; /* Border properties */
+  border-radius: 5px; /* Rounded corners for the box */
+  margin: 20px auto 0; /* Center the div horizontally and set top margin */
+  font-family: "Lalezar";
+}

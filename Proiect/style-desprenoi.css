@@ -1,0 +1,76 @@
+.image-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.row-container {
+  display: flex;
+  flex-direction: column; /* Afișează rândurile vertical */
+  gap: 20px; /* Ajustează spațiul dintre rânduri */
+  padding-top: 50px;
+  align-items: center;
+}
+
+.image-text-box {
+  display: flex;
+  align-items: flex-start; /* Aliniază elementele sus */
+  gap: 45px; /* Ajustează spațiul dintre imagine și text */
+}
+
+.image-text-box img {
+  max-width: 550px; /* Setează lățimea maximă a imaginii la 
+  max-height: 400px; /* Setează înălțimea maximă a imaginii la 
+  margin-top: 20px; /* Adaugă distanță între primul element și partea de sus */
+  margin-bottom: 20px; /* Adaugă distanță între ultimul element și partea de jos */
+  border: 2px solid #000000; /* Border properties */
+  border-radius: 5px; /* Rounded corners for the box */
+}
+
+.text-box {
+  background-color: #323a3a;
+  padding: 20px;
+  font-size: 22px; /* Ajustează dimensiunea fontului */
+  color: #ffffff;
+  height: 390px; /* Setează înălțimea text box-ului pentru a se potrivi imaginii */
+  width: 550px; /* Setează lățimea text box-ului */
+  box-sizing: border-box; /* Include padding-ul în calculul dimensiunii */
+  font-family: "Roboto Bold";
+  border: 2px solid #000000; /* Border properties */
+  border-radius: 5px; /* Rounded corners for the box */
+}
+.numepagina {
+  padding: 20px; /* Padding around the content */
+  text-align: center;
+  font-size: 25px;
+  width: fit-content; /* Set width to fit the content */
+  margin: 0 auto; /* Center the div horizontally */
+  background-color: #323a3a; /* Background color for the box */
+  color: #ffffff; /* Text color */
+  border: 2px solid #000000; /* Border properties */
+  border-radius: 5px; /* Rounded corners for the box */
+  margin: 20px auto 0; /* Center the div horizontally and set top margin */
+  font-family: "Lalezar";
+}
+h2 {
+  font-family: "Lalezar";
+}
+/* Media query pentru ecranele mai mici de 1023px */
+@media screen and (max-width: 1023px) {
+  .image-text-box {
+    flex-direction: column; /* Afișează elementele într-o coloană pe ecrane mai mici */
+    align-items: center; /* Aliniază elementele în centru */
+    text-align: center; /* Aliniază textul la centru */
+    margin: 20px;
+  }
+
+  .text-box {
+    width: 100%; /* Face ca textul să se extindă pe întreaga lățime a conținătorului */
+    font-size: 17px; /* Ajustează dimensiunea fontului pentru dispozitivele mai mici */
+  }
+
+  .image-text-box img {
+    max-width: 100%; /* Face imaginea să se ajusteze la lățimea conținătorului */
+    height: auto; /* Menține aspectul imaginii */
+    margin-bottom: 20px; /* Adaugă spațiu între imagine și text pe ecrane mici */
+  }
+}

@@ -1,0 +1,77 @@
+.numepagina {
+  padding: 20px; /* Padding around the content */
+  text-align: center;
+  font-size: 25px;
+  width: fit-content; /* Set width to fit the content */
+  margin: 0 auto; /* Center the div horizontally */
+  background-color: #323a3a; /* Background color for the box */
+  color: #ffffff; /* Text color */
+  border: 2px solid #000000; /* Border properties */
+  border-radius: 5px; /* Rounded corners for the box */
+  margin: 20px auto 0; /* Center the div horizontally and set top margin */
+  font-family: "Lalezar";
+}
+
+header {
+  font-family: "Roboto", sans-serif;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #aab7b8;
+  margin-top: 53px; /* Adaugarea unui spatiu de 20px intre container si nume pagina */
+}
+.centered-div {
+  text-align: center;
+  padding: 20px;
+  background-color: #323a3a;
+  color: #ffffff;
+  border-radius: 5px;
+  width: 90%; /* Schimbarea lățimii containerului */
+  max-width: 1200px; /* Lățimea maximă a containerului */
+  margin: 0 auto; /* Centrează containerul pe pagină */
+  font-family: "Lalezar", sans-serif;
+  font-size: 25px;
+  border: 2px solid #000000; /* Border properties */
+}
+
+.section {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.content {
+  text-align: center;
+  flex: 1;
+  max-width: 45%;
+  font-family: "Bebas Neue", sans-serif;
+}
+
+.content img {
+  max-width: 155px;
+  max-height: 155px;
+  margin-bottom: 10px;
+}
+.separator1 {
+  display: inline-block;
+  width: 30px; /* Lungimea liniei */
+  height: 5px; /* Grosimea liniei */
+  background-color: #ffffff;
+  vertical-align: middle; /* Aliniere verticală */
+  margin: 20px 10px; /* Spațierea între liniuțe și text */
+  position: relative; /* Asigură poziționarea relativă pentru a utiliza bottom */
+  bottom: -130px; /* Ajustează poziția verticală a liniei - modifică această valoare pentru a schimba poziția */
+}
+
+.separator2 {
+  display: inline-block;
+  width: 30px; /* Lungimea liniei */
+  height: 5px; /* Grosimea liniei */
+  background-color: #ffffff;
+  vertical-align: middle; /* Aliniere verticală */
+  margin: 20px 10px; /* Spațierea între liniuțe și text */
+  position: relative; /* Asigură poziționarea relativă pentru a utiliza bottom */
+  bottom: -130px; /* Ajustează poziția verticală a liniei - modifică această valoare pentru a schimba poziția */
+}

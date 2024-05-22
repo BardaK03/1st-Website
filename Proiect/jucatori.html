@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jucători</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style-jucatori.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lalezar&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <nav class="meniu">
+        <ul class="nav">
+          <li><a href="desprenoi.html">Despre Noi</a></li>
+          <li class="dropdown">
+            <a href="#" class="dropbtn">Echipă</a>
+            <div class="dropdown-content">
+              <a href="jucatori.html">Jucători</a>
+              <a href="antrenori.html">Antrenori</a>
+            </div>
+          </li>
+          <li>
+            <a href="principala.html">
+              <img id="logo" src="logo.png" alt="Logo" />
+            </a>
+          </li>
+          <li><a href="program.html">Program</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="meniu-hamburger" onclick="toggleMeniu()">
+      <img src="hamburger.png" alt="Meniu Hamburger" />
+    </div>
+
+    <ul class="meniu-hamburger-list" id="meniu-hamburger-list">
+      <li><a href="principala.html">Pagina Principală</a></li>
+      <li><a href="desprenoi.html">Despre Noi</a></li>
+      <li><a href="jucatori.html">Jucători</a></li>
+      <li><a href="antrenori.html">Antrenori</a></li>
+      <li><a href="program.html">Program</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+
+    <main>
+      <div class="numepagina">
+        <p>Jucători</p>
+      </div>
+
+      <main class="container">
+        <div class="row">
+          <div class="box">
+            <a href="3.html">
+              <img src="./poze-echipa/poza1.png" alt="Poza 1" />
+            </a>
+            <div class="text-box">
+              <p>Andrei Popescoo - Poziția: Fundaș(PG),Număr: 3</p>
+            </div>
+          </div>
+          <div class="box">
+            <a href="2.html">
+              <img src="./poze-echipa/poza2.png" alt="Poza 1" />
+            </a>
+            <div class="text-box">
+              <p>Abramovici Ionescu - Poziția: (SG), Număr: 2</p>
+            </div>
+          </div>
+          <div class="box">
+            <a href="10.html">
+              <img src="./poze-echipa/poza10.png" alt="Poza 1" />
+            </a>
+            <div class="text-box">
+              <p>Ionel Sticlarul - Poziția: Pivot (C), Număr:10</p>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="box">
+            <a href="4.html">
+              <img src="./poze-echipa/poza4.png" alt="Poza 1" />
+            </a>
+            <div class="text-box">
+              <p>George Marinescu - Poziția: Aripă(PF), Număr: 4</p>
+            </div>
+          </div>
+          <div class="box">
+            <a href="6.html">
+              <img src="./poze-echipa/poza5.png" alt="Poza 1" />
+            </a>
+            <div class="text-box">
+              <p>Ionut Gheorghe - Poziția: Pivot (C), Număr: 6</p>
+            </div>
+          </div>
+          <div class="box">
+            <a href="41.html">
+              <img src="./poze-echipa/poza11.png" alt="Poza 1" />
+            </a>
+            <div class="text-box">
+              <p>Victor Stoica - Poziția: Fundaș (PG), Număr: 41</p>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="box">
+            <a href="1.html">
+              <img src="./poze-echipa/poza7.png" alt="Poza 1" />
+            </a>
+            <div class="text-box">
+              <p>Alexandru Popovici - Poziția: Aripă(SF), Număr: 1</p>
+            </div>
+          </div>
+          <div class="box">
+            <a href="10.html">
+              <img src="./poze-echipa/poza8.png" alt="Poza 1" />
+            </a>
+            <div class="text-box">
+              <p>Florin Marin - Poziția: Fundaș (SG), Număr: 10</p>
+            </div>
+          </div>
+          <div class="box">
+            <a href="44.html">
+              <img src="./poze-echipa/poza12.png" alt="Poza 1" />
+            </a>
+            <div class="text-box">
+              <p>Marius Gheorghe - Poziția: Pivot (C), Număr: 44</p>
+            </div>
+          </div>
+        </div>
+      </main>
+    </main>
+    <footer>
+      <div class="footer">
+        <img src="footer.jpg" alt="footer" />
+      </div>
+    </footer>
+
+    <script>
+      function toggleMeniu() {
+        let meniuHamburger = document.getElementById("meniu-hamburger-list");
+        if (meniuHamburger.style.display === "block") {
+          meniuHamburger.style.display = "none"; // Ascunde meniul
+        } else {
+          meniuHamburger.style.display = "block"; // Afiseaza meniul
+        }
+      }
+    </script>
+  </body>
+</html>
+!

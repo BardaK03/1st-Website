@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style-contact.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lalezar&family=Roboto:wght@700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <nav class="meniu">
+        <ul class="nav">
+          <li><a href="desprenoi.html">Despre Noi</a></li>
+          <li class="dropdown">
+            <a href="#" class="dropbtn">Echipă</a>
+            <div class="dropdown-content">
+              <a href="jucatori.html">Jucători</a>
+              <a href="antrenori.html">Antrenori</a>
+            </div>
+          </li>
+          <li>
+            <a href="principala.html">
+              <img id="logo" src="logo.png" alt="Logo" />
+            </a>
+          </li>
+          <li><a href="program.html">Program</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="numepagina">
+      <p>Contact</p>
+    </div>
+    <div class="meniu-hamburger" onclick="toggleMeniu()">
+      <img src="hamburger.png" alt="Meniu Hamburger" />
+    </div>
+
+    <ul class="meniu-hamburger-list" id="meniu-hamburger-list">
+      <li><a href="principala.html">Pagina Principală</a></li>
+      <li><a href="desprenoi.html">Despre Noi</a></li>
+      <li><a href="jucatori.html">Jucători</a></li>
+      <li><a href="antrenori.html">Antrenori</a></li>
+      <li><a href="program.html">Program</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+
+    <main>
+      <div class="container">
+        <div class="content">
+          <img src="./poze-contact/contact1.png" alt="Imagine 1" />
+          <div class="textbox">
+            <p>
+              Biroul administrativ-Turnul Central-etaj 1 Strada Independentei,nr
+              6,Bucuresti
+            </p>
+          </div>
+        </div>
+        <div class="content middle">
+          <img src="./poze-contact/contact2.png" alt="Imagine 2" />
+          <div class="textbox">
+            <p>
+              Marketing &Media -Giulesti-Park Strada Mirel Radoi,nr 3,Bucuresti
+            </p>
+          </div>
+        </div>
+        <div class="content">
+          <img src="./poze-contact/contact3.png" alt="Imagine 3" />
+          <div class="textbox">
+            <p>
+              Magazin pentru fani -Crow-Mall Strada Florinel Coman,nr
+              7,Bucuresti
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="wrapper">
+        <p class="text-above-form">
+          Pentru alte intrebari,ne puteti contacta completand urmatorul
+          formular:
+        </p>
+      </div>
+      <div class="center">
+        <form
+          action=""
+          method="post"
+          id="myForm"
+          onsubmit="return validateForm()"
+        >
+          <label for="fname">Nume</label>
+          <input
+            type="text"
+            id="fname"
+            name="firstname"
+            placeholder="Numele tău"
+          />
+
+          <label for="lname">Prenume</label>
+          <input
+            type="text"
+            id="lname"
+            name="lastname"
+            placeholder="Prenumele tău"
+          />
+
+          <label for="country">Țara</label>
+          <select id="country" name="country">
+            <option value="">Alege țara din care provii</option>
+            <option value="romania">Romania</option>
+            <option value="canada">Serbia</option>
+            <option value="moldova">Moldova</option>
+          </select>
+
+          <label for="subject">Subiectul email-ului</label>
+          <textarea
+            id="subject"
+            name="subject"
+            placeholder="Srie ceva..."
+            style="height: 200px"
+          ></textarea>
+
+          <input type="submit" value="Submit" />
+        </form>
+      </div>
+    </main>
+    <footer>
+      <div class="footer">
+        <img src="footer.jpg" alt="footer" />
+      </div>
+    </footer>
+    <script>
+      function toggleMeniu() {
+        let meniuHamburger = document.getElementById("meniu-hamburger-list");
+        if (meniuHamburger.style.display === "block") {
+          meniuHamburger.style.display = "none"; // Ascunde meniul
+        } else {
+          meniuHamburger.style.display = "block"; // Afiseaza meniul
+        }
+      }
+
+      function validateForm() {
+        var fname = document.getElementById("fname").value;
+        var lname = document.getElementById("lname").value;
+        var country = document.getElementById("country").value;
+        var subject = document.getElementById("subject").value;
+
+        if (fname == "" || lname == "" || country == "" || subject == "") {
+          alert("Te rog completeaza toate campurile");
+          return false;
+        } else {
+          alert("Datele tale au fost validate cu succes!");
+          document.getElementById("myForm").reset();
+
+          return false;
+        }
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Despre Noi</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style-desprenoi.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lalezar&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <nav class="meniu">
+        <ul class="nav">
+          <li><a href="desprenoi.html">Despre Noi</a></li>
+          <li class="dropdown">
+            <a href="#" class="dropbtn">Echipă</a>
+            <div class="dropdown-content">
+              <a href="jucatori.html">Jucători</a>
+              <a href="antrenori.html">Antrenori</a>
+            </div>
+          </li>
+          <li>
+            <a href="principala.html">
+              <img id="logo" src="logo.png" alt="Logo" />
+            </a>
+          </li>
+          <li><a href="program.html">Program</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="meniu-hamburger" onclick="toggleMeniu()">
+      <img src="hamburger.png" alt="Meniu Hamburger" />
+    </div>
+
+    <ul class="meniu-hamburger-list" id="meniu-hamburger-list">
+      <li><a href="principala.html">Pagina Principală</a></li>
+      <li><a href="desprenoi.html">Despre Noi</a></li>
+      <li><a href="jucatori.html">Jucători</a></li>
+      <li><a href="antrenori.html">Antrenori</a></li>
+      <li><a href="program.html">Program</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+
+    <main>
+      <div class="numepagina">
+        <p>Despre Noi</p>
+      </div>
+    </main>
+    <main class="content">
+      <div class="row-container">
+        <div class="image-text-box">
+          <img src="./poze-desprenoi/istorie.jpg" alt="Image 1" />
+          <div class="text-box">
+            <h2>Istorie</h2>
+            <br />
+            <p>
+              Fondat în 1969 de către pasionați ai baschetului în Giulești,
+              clubul Ciorile a devenit un simbol al excelenței sportive. Cu
+              multiple titluri naționale și internaționale, echipa și-a
+              consolidat reputația ca forță dominantă, inspirând generații de
+              jucători să aspire către succesul pe terenul de baschet.
+            </p>
+          </div>
+        </div>
+        <div class="image-text-box">
+          <img src="./poze-desprenoi/filosofia.jpg" alt="Image 2" />
+          <div class="text-box">
+            <h2>Filosofia clubului</h2>
+            <br />
+            Filosofia noastră se bazează pe valori fundamentale: pasiunea pentru
+            baschet, dezvoltarea individuală și colectivă și respectul reciproc.
+            Ne concentrăm pe construirea unei echipe puternice prin colaborare,
+            perseverență și determinare. Încurajăm fair-play-ul, spiritul
+            competitiv sănătos și angajamentul pentru a atinge excelența într-un
+            mediu care promovează creșterea atât pe teren, cât și în afara lui.
+          </div>
+        </div>
+        <div class="image-text-box">
+          <img src="./poze-desprenoi/proiecte.jpg" alt="Image 3" />
+          <div class="text-box">
+            <h2>Proiecte</h2>
+            <br />
+            Clubul nostru, în paralel cu activitățile sportive, se implică activ
+            în inițiative de responsabilitate socială. Organizăm tabere de
+            baschet pentru copiii din comunitate, promovăm sănătatea și
+            echilibrul prin programe de fitness gratuite și colaborăm cu școlile
+            locale pentru a încuraja educația și sportul în rândul tinerilor,
+            evidențiind importanța unei vieți echilibrate și active.
+          </div>
+        </div>
+        <div class="image-text-box">
+          <img src="./poze-desprenoi/sponsori.jpg" alt="Image 4" />
+          <div class="text-box">
+            <h2>Conexiunea cu fanii</h2>
+            <br />
+            Suntem profund dedicați relației noastre cu suporterii noștri
+            pasionați. Facem eforturi constante pentru a crea un angajament
+            bidirecțional, oferind acces exclusiv la evenimente, sesiuni de
+            întâlnire cu jucătorii și materiale exclusive. Prin intermediul
+            rețelelor sociale și a platformelor online, împărtășim poveștile
+            echipei, implicând fanii în fiecare pas al călătoriei noastre și
+            evidențiind importanța sprijinului lor pentru succesul nostru.
+          </div>
+        </div>
+        <div class="image-text-box">
+          <img src="./poze-desprenoi/conexiunea.jpg" alt="Image 5" />
+          <div class="text-box">
+            <h2>Sponsori</h2>
+            <br />
+            Sponsori de încredere precum Supreme, KFC, Volvo, Qatar Airways,
+            Coca-Cola, GymBean, STIHL și InterContinental Hotels susțin cu
+            mândrie echipa noastră. Aceste parteneriate reprezintă un sprijin
+            esențial în eforturile noastre pentru excelență. Prin colaborarea
+            noastră, demonstrăm angajamentul nostru comun pentru performanță și
+            dezvoltarea sportivă, oferind suporterilor și comunității o
+            experiență excepțională în baschet, susținută de parteneriate de
+            înaltă calitate și implicare profundă.
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="footer">
+        <img src="footer.jpg" alt="footer" />
+      </div>
+    </footer>
+    <script>
+      function toggleMeniu() {
+        let meniuHamburger = document.getElementById("meniu-hamburger-list");
+        if (meniuHamburger.style.display === "block") {
+          meniuHamburger.style.display = "none"; // Ascunde meniul
+        } else {
+          meniuHamburger.style.display = "block"; // Afiseaza meniul
+        }
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,160 @@
+.nav {
+  display: none;
+}
+.meniu-hamburger-list {
+  display: none;
+}
+@media screen and (min-width: 1024px) {
+  .meniu {
+    display: block; /* Meniul implicit este afișat pe ecrane mai mari */
+  }
+  .meniu-hamburger {
+    display: none;
+  }
+}
+/* Ascunde meniul la ecranele mai mici */
+@media screen and (max-width: 1023px) {
+  .meniu-hamburger {
+    display: block;
+  }
+
+  .meniu {
+    display: none;
+  }
+
+  /* Stilizeaza imaginea meniului hamburger */
+  .meniu-hamburger img {
+    width: 40px; /* Modifică dimensiunea după necesități */
+    height: auto;
+    cursor: pointer;
+  }
+
+  /* Ascunde meniul hamburger by default */
+  .meniu-hamburger-list {
+    display: none;
+  }
+
+  /* Afișează meniul hamburger atunci când este activat */
+  .meniu-hamburger-list.active {
+    display: block;
+  }
+
+  /* Stilizare pentru link-urile din meniul hamburger */
+  .meniu-hamburger-list li {
+    list-style: none;
+    padding: 10px 0;
+  }
+
+  .meniu-hamburger-list li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+  }
+
+  .meniu-hamburger-list li a:hover {
+    color: #aab7b8;
+  }
+}
+footer {
+  height: 10px; /* Înălțimea redusă pentru footer pe aceste dispozitive */
+  margin-top: 20px; /* Margin-top redus pentru a reduce spațiul pe ecranele mai mici */
+}
+footer {
+  text-align: center; /* Center the content of the footer */
+  height: auto; /* Reset the height */
+  max-width: 100%; /* Adjust the maximum width */
+  padding: 10px; /* Add some padding for spacing */
+}
+
+.footer img {
+  width: 80%; /* Adjust the image width to fit smaller screens */
+  height: auto; /* Maintain aspect ratio */
+  display: block; /* Ensure the image behaves as a block element */
+  margin: 0 auto; /* Center the image horizontally */
+}
+
+body {
+  background-color: #aab7b8;
+  color: #ffffff;
+  margin: 0;
+  padding: 0;
+}
+header {
+  background-color: #000000;
+  color: #ffffff;
+  font-family: "Lalezar", sans-serif;
+  text-align: center;
+  width: 100vw;
+  height: auto;
+}
+footer {
+  position: relative;
+  margin: 20px auto;
+  max-width: 920px;
+  max-height: 189px;
+  text-align: center;
+}
+#logo {
+  max-width: 130px; /* Set a maximum width for the logo */
+  height: auto; /* Maintain aspect ratio */
+  display: block; /* Ensure the image behaves as a block element */
+  margin: 0 auto; /* Center the logo horizontally */
+}
+
+.nav {
+  text-align: center;
+  display: flex;
+  justify-content: center; /* Center the navigation items horizontally */
+  align-items: center; /* Center the navigation items vertically */
+}
+
+.nav li {
+  flex: 1;
+  display: inline;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+  color: white;
+  font-size: 35px;
+  font-family: "Lalezar", sans-serif;
+}
+
+/* Dropdown styles */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #000000;
+  min-width: 120px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #aab7b8;
+}
+
+.dropdown:hover .dropdown-content {
+  display: flex;
+}

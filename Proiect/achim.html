@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cristian Achim</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="achim.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lalezar&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://use.fontawesome.com/d1341f9b7a.js"></script>
+  </head>
+  <body>
+    <header>
+      <nav class="meniu">
+        <ul class="nav">
+          <li><a href="desprenoi.html">Despre Noi</a></li>
+          <li class="dropdown">
+            <a href="#" class="dropbtn">Echipă</a>
+            <div class="dropdown-content">
+              <a href="jucatori.html">Jucători</a>
+              <a href="antrenori.html">Antrenori</a>
+            </div>
+          </li>
+          <li>
+            <a href="principala.html">
+              <img id="logo" src="logo.png" alt="Logo" />
+            </a>
+          </li>
+          <li><a href="program.html">Program</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="meniu-hamburger" onclick="toggleMeniu()">
+      <img src="hamburger.png" alt="Meniu Hamburger" />
+    </div>
+
+    <ul class="meniu-hamburger-list" id="meniu-hamburger-list">
+      <li><a href="principala.html">Pagina Principală</a></li>
+      <li><a href="desprenoi.html">Despre Noi</a></li>
+      <li><a href="jucatori.html">Jucători</a></li>
+      <li><a href="antrenori.html">Antrenori</a></li>
+      <li><a href="program.html">Program</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+
+    <main>
+      <div class="numepagina">
+        <div class="box">
+          <img src="./poze-jucatori/achim.png" alt="" class="box-img" />
+          <h1>Cristian Achim</h1>
+          <h5>Antrenor principal</h5>
+          <p>
+            Cristian Achim este un antrenor dedicat și pasionat de baschet,
+            cunoscut pentru abilitățile sale tactice și motivaționale. Cu o
+            carieră extinsă în sportul cu mingea la coș, el și-a adus
+            contribuția la dezvoltarea jucătorilor și echipelor din diferite
+            categorii de vârstă și nivel de performanță. Stilul său de
+            antrenament se concentrează pe tehnici de bază, strategie de joc și
+            o abordare holistică pentru a dezvolta abilitățile individuale și
+            colective ale jucătorilor. Prin dedicarea sa față de sport și
+            dezvoltarea continuă a echipei, Cristian Achim este un mentor
+            respectat în comunitatea baschetului.
+          </p>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="footer">
+        <img src="footer.jpg" alt="footer" />
+      </div>
+    </footer>
+    <script>
+      function toggleMeniu() {
+        let meniuHamburger = document.getElementById("meniu-hamburger-list");
+        if (meniuHamburger.style.display === "block") {
+          meniuHamburger.style.display = "none"; // Ascunde meniul
+        } else {
+          meniuHamburger.style.display = "block"; // Afiseaza meniul
+        }
+      }
+    </script>
+  </body>
+</html>

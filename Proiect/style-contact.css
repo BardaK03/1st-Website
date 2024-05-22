@@ -1,0 +1,127 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px 0; /* Spațiu între div-uri */
+}
+
+.content img,
+.content .textbox {
+  /*  width: 50%;Imaginile și textele ocupă jumătate din lățime */
+  height: 364px; /* Înălțimea imaginilor */
+}
+
+.textbox {
+  background-color: #323a3a;
+  color: white;
+  padding: 10px;
+  width: 503px; /* Lățimea dorită a text box-ului */
+  display: flex;
+  align-items: center;
+  font-family: "Roboto", sans-serif;
+  font-size: 35px;
+  text-align: center;
+}
+
+.textbox p {
+  margin: 0;
+}
+/* Style inputs with type="text", select elements and textareas */
+input[type="text"],
+select,
+textarea {
+  color: #000000;
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */
+  border: 1px solid #ffffff; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
+  font-family: "Roboto", sans-serif;
+}
+
+/* Style the submit button with a specific background color etc */
+input[type="submit"] {
+  background-color: #323a3a;
+  color: rgb(0, 0, 0);
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: "Roboto ";
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type="submit"]:hover {
+  background-color: #fafeff;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 80%;
+  margin: 0 auto;
+  font-family: "Roboto";
+}
+body {
+  background-color: #aab7b8;
+  color: #000000;
+  margin: 0;
+  padding: 0;
+}
+.numepagina {
+  padding: 20px; /* Padding around the content */
+  text-align: center;
+  font-size: 25px;
+  width: fit-content; /* Set width to fit the content */
+  margin: 0 auto; /* Center the div horizontally */
+  background-color: #323a3a; /* Background color for the box */
+  color: #ffffff; /* Text color */
+  border: 2px solid #000000; /* Border properties */
+  border-radius: 5px; /* Rounded corners for the box */
+  margin: 20px auto 0; /* Center the div horizontally and set top margin */
+  font-family: "Lalezar";
+}
+
+/* Stil pentru dispozitivele cu ecrane mai mici */
+@media (max-width: 1023px) {
+  .center {
+    flex-direction: column; /* Schimbarea direcției pentru a gestiona elementele în coloană */
+    height: auto; /* Anularea înălțimii pe întreaga înălțime a ferestrei pentru a permite redimensionarea */
+
+    width: 80%;
+  }
+  .content {
+    flex-direction: column; /* Schimbă direcția elementelor la coloană */
+    margin: 10px 0; /* Redu spațiul între conținut pe dispozitive mici */
+
+    img {
+      width: 80%; /* Ajustează lățimea imaginii la ecranele mici */
+      height: auto; /* Menține aspectul proporțional al imaginii */
+    }
+  }
+
+  .textbox {
+    width: 80%; /* Redu lățimea text box-ului la ecranele mici */
+    font-size: 18px; /* Redu dimensiunea fontului pentru text box */
+  }
+}
+.text-above-form {
+  position: relative;
+  z-index: 1; /* Asigură că se va afișa deasupra formularului */
+  text-align: center;
+
+  font-family: "Roboto", sans-serif;
+  font-size: 26px;
+}
